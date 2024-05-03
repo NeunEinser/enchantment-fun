@@ -1,8 +1,8 @@
-# Neunchantemnts
+# Neunchantments
 
 Adds some fun enchantments with the new stystem.
 
-- **Hot Pants** Random chance to inflict ignight attacking entity
+- **Hot Pants** Random chance to ignight attacking entity
   - Applicable to pants
   - Comes in levels 1 to to
   - Level 1: 20% chance and 5 seconds of burning
