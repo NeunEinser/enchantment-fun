@@ -1,0 +1,55 @@
+{
+	"anvil_cost": 8,
+	"description": "Hot Pants",
+	"effects": {
+		"minecraft:post_attack": [
+			{
+				"affected": "attacker",
+				"enchanted": "victim",
+				"effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+						{
+							"type": "minecraft:ignite",
+							"duration": {
+								"type": "linear",
+								"base": 5,
+								"per_level_above_first": 3
+							}
+						},
+						{
+							"type": "minecraft:damage_item",
+							"amount": 2.0
+						}
+					]
+				},
+				"requirements": {
+					"condition": "minecraft:random_chance",
+					"chance": {
+						"type": "minecraft:enchantment_level",
+						"amount": {
+							"type": "minecraft:linear",
+							"base": 0.2,
+							"per_level_above_first": 0.15
+						}
+					}
+				}
+			}
+		]
+	},
+	"max_cost": {
+		"base": 60,
+		"per_level_above_first": 20
+	},
+	"max_level": 2,
+	"min_cost": {
+		"base": 10,
+		"per_level_above_first": 20
+	},
+	"primary_items": "#minecraft:leg_armor",
+	"slots": [
+		"armor"
+	],
+	"supported_items": "#minecraft:leg_armor",
+	"weight": 1
+}
