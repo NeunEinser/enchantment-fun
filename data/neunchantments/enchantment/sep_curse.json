@@ -1,0 +1,70 @@
+{
+	"anvil_cost": 1,
+	"description": "Curse of Someone Else's Problem",
+	"effects": {
+		"minecraft:post_attack": [
+			{
+				"affected": "victim",
+				"enchanted": "attacker",
+				"effect": {
+					"type": "all_of",
+					"effects": [
+						{
+							"type": "minecraft:apply_mob_effect",
+							"to_apply": "minecraft:invisibility",
+							"min_duration": 5,
+							"max_duration": 10,
+							"min_amplifier": 0,
+							"max_amplifier": 0
+						},
+						{
+							"type": "minecraft:spawn_particles",
+							"particle": { "type": "minecraft:poof" },
+							"speed": 3,
+							"horizontal_position": { "type": "in_bounding_box" },
+							"vertical_position": { "type": "in_bounding_box", "offset": 0.5 },
+							"horizontal_velocity": {},
+							"vertical_velocity": {}
+						},
+						{
+							"type": "minecraft:spawn_particles",
+							"particle": { "type": "minecraft:poof" },
+							"speed": 3,
+							"horizontal_position": { "type": "in_bounding_box" },
+							"vertical_position": { "type": "in_bounding_box", "offset": 0.5 },
+							"horizontal_velocity": {},
+							"vertical_velocity": {}
+						},
+						{
+							"type": "minecraft:spawn_particles",
+							"particle": { "type": "minecraft:poof" },
+							"speed": 3,
+							"horizontal_position": { "type": "in_bounding_box" },
+							"vertical_position": { "type": "in_bounding_box", "offset": 0.5 },
+							"horizontal_velocity": {},
+							"vertical_velocity": {}
+						}
+					]
+				},
+				"requirements": {
+					"condition": "minecraft:random_chance",
+					"chance": 0.5
+				}
+			}
+		]
+	},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 0
+	},
+	"max_level": 1,
+	"min_cost": {
+		"base": 25,
+		"per_level_above_first": 0
+	},
+	"slots": [
+		"mainhand"
+	],
+	"supported_items": "#minecraft:enchantable/weapon",
+	"weight": 1
+}
