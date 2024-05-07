@@ -15,7 +15,7 @@ Adds some fun enchantments with the new stystem.
 - **Power Walk** Powers redstone underneath the player 
   - For redstone dust, no visual change, but repeaters will flicker when they are connected to the line
   - Player emits redstone particles when walking
-  - Mutually exclusive with forst walke, depth strider and Skywalker (see below)
+  - Mutually exclusive with frost walker, depth strider and Skywalker (see below)
   - Only triggers when player is moving
 - **Skywaker** Places scaffolding when the player is above air
   - Places scaffolding directly below the player
